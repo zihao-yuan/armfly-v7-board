@@ -10,7 +10,7 @@
       <TargetName>rtthread</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath>.\build\keil\List\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>__STDC_LIMIT_MACROS, RT_USING_ARMLIBC, STM32H743xx, USE_HAL_DRIVER, RT_USING_LIBC, __CLK_TCK=RT_TICK_PER_SECOND, __RTTHREAD__</Define>
               <Undefine></Undefine>
-              <IncludePath>rt-thread\components\libc\compilers\common\extension\fcntl\octal;rt-thread\components\drivers\include;rt-thread\components\drivers\include;libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Inc;.;rt-thread\include;applications;rt-thread\components\finsh;libraries\HAL_Drivers;rt-thread\components\drivers\include;libraries\HAL_Drivers\CMSIS\Include;libraries\STM32H7xx_HAL\CMSIS\Device\ST\STM32H7xx\Include;rt-thread\components\libc\compilers\common\include;rt-thread\components\libc\posix\ipc;rt-thread\components\libc\compilers\common\extension;libraries\HAL_Drivers\config;board;board\CubeMX_Config\Inc;rt-thread\components\libc\posix\io\stdio;rt-thread\libcpu\arm\common;rt-thread\components\libc\posix\io\poll;rt-thread\libcpu\arm\cortex-m7</IncludePath>
+              <IncludePath>libraries\HAL_Drivers\CMSIS\Include;rt-thread\components\drivers\include;rt-thread\components\finsh;.;board;libraries\STM32H7xx_HAL\CMSIS\Device\ST\STM32H7xx\Include;rt-thread\components\libc\posix\io\stdio;rt-thread\components\libc\posix\ipc;libraries\HAL_Drivers\config;rt-thread\components\libc\posix\io\poll;rt-thread\components\drivers\include;rt-thread\include;libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m7;rt-thread\components\libc\compilers\common\extension;rt-thread\components\libc\compilers\common\include;libraries\HAL_Drivers;rt-thread\components\drivers\include;applications;board\CubeMX_Config\Inc;rt-thread\components\libc\compilers\common\extension\fcntl\octal</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
