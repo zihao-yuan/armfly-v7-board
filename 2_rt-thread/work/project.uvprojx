@@ -10,7 +10,7 @@
       <TargetName>rtthread</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>__STDC_LIMIT_MACROS, RT_USING_ARMLIBC, STM32H743xx, USE_HAL_DRIVER, RT_USING_LIBC, __CLK_TCK=RT_TICK_PER_SECOND, __RTTHREAD__</Define>
               <Undefine></Undefine>
-              <IncludePath>libraries\HAL_Drivers\CMSIS\Include;rt-thread\components\drivers\include;rt-thread\components\finsh;.;board;libraries\STM32H7xx_HAL\CMSIS\Device\ST\STM32H7xx\Include;rt-thread\components\libc\posix\io\stdio;rt-thread\components\libc\posix\ipc;libraries\HAL_Drivers\config;rt-thread\components\libc\posix\io\poll;rt-thread\components\drivers\include;rt-thread\include;libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m7;rt-thread\components\libc\compilers\common\extension;rt-thread\components\libc\compilers\common\include;libraries\HAL_Drivers;rt-thread\components\drivers\include;applications;board\CubeMX_Config\Inc;rt-thread\components\libc\compilers\common\extension\fcntl\octal</IncludePath>
+              <IncludePath>libraries\HAL_Drivers\CMSIS\Include;rt-thread\components\drivers\include;rt-thread\components\finsh;.;board;libraries\STM32H7xx_HAL\CMSIS\Device\ST\STM32H7xx\Include;rt-thread\components\libc\posix\io\stdio;rt-thread\components\libc\posix\ipc;libraries\HAL_Drivers\config;rt-thread\components\libc\posix\io\poll;rt-thread\components\drivers\include;board\bsp\inc;rt-thread\include;libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m7;board\bsp;rt-thread\components\libc\compilers\common\extension;rt-thread\components\libc\compilers\common\include;libraries\HAL_Drivers;rt-thread\components\drivers\include;applications;board\CubeMX_Config\Inc;rt-thread\components\libc\compilers\common\extension\fcntl\octal</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,6 +387,26 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>applications\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>board\bsp\src\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_fmc_io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>board\bsp\src\bsp_fmc_io.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>board\bsp\bsp.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -757,6 +777,11 @@
               <FileName>system_stm32h7xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>libraries\STM32H7xx_HAL\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_ll_fmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c</FilePath>
             </File>
           </Files>
         </Group>
