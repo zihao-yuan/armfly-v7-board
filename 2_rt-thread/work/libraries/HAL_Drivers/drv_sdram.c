@@ -10,7 +10,7 @@
 
 #include <board.h>
 
-#ifdef BSP_USING_SDRAM
+#ifdef BSP_USING_SDRAM_
 #include <sdram_port.h>
 
 #define DRV_DEBUG

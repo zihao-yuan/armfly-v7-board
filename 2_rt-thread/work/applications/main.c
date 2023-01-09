@@ -16,11 +16,15 @@
 
 int main(void)
 {
-	bsp_Init();
     for(;;)
     {
-        rt_thread_mdelay(500);
-		bsp_LedToggle(1);		
+        rt_thread_mdelay(100);
+		bsp_LedToggle(1);
+		rt_thread_mdelay(100);
+		bsp_LedToggle(2);	
+        rt_thread_mdelay(100);
+		bsp_LedToggle(3);
+		rt_thread_mdelay(100);
+		bsp_LedToggle(4);	
     }
-    return RT_EOK;
 }

@@ -126,7 +126,7 @@
 //#include "bsp_can.h"
 
 /* 提供给其他C文件调用的函数 */
-void bsp_Init(void);
+int bsp_Init(void);
 void bsp_Idle(void);
 
 void bsp_GetCpuID(uint32_t *_id);
