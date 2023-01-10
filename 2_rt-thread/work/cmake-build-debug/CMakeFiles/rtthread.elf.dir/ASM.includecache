@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Source/Templates/gcc/startup_stm32h743xx.s
+
+D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7/context_gcc.S
+

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rtthread"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtthread.elf">
+				<Option output="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/rtthread.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32H743xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/applications"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/config"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/."/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/io/stdio"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/arm-none-eabi"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/backward"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/include"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/include-fixed"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtthread.elf"/>
+					<CompileFile command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rtthread.elf/fast">
+				<Option output="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/rtthread.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRT_USING_LIBC"/>
+					<Add option="-DRT_USING_NEWLIBC"/>
+					<Add option="-DSTM32H743xx"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-D_POSIX_C_SOURCE=1"/>
+					<Add option="-D__RTTHREAD__"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/applications"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/newlib"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/common"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/CubeMX_Config/Inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/config"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/CMSIS/Include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/."/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/io/poll"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/io/stdio"/>
+					<Add directory="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/posix/ipc"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/arm-none-eabi"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include/c++/5.4.1/backward"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/include"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/include-fixed"/>
+					<Add directory="d:\1_tool_prog\16_env\env_released_1.2.0\env\tools\gnu_gcc\arm_gcc\mingw\bin\../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 rtthread.elf/fast"/>
+					<CompileFile command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/1_tool_prog/31_clion/CLion 2022.3.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/applications/main.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/CubeMX_Config/Src/stm32h7xx_hal_msp.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/board.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/board.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/bsp.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/bsp.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/src/bsp_fmc_io.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/board/bsp/src/bsp_led.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_common.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_common.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_gpio.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_gpio.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_sdram.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_usart.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/HAL_Drivers/drv_usart.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Source/Templates/gcc/startup_stm32h743xx.s">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cec.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_comp.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cryp.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cryp_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/completion.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/dataqueue.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/pipe.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/ringblk_buf.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/ringbuffer.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/waitqueue.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/ipc/workqueue.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/misc/pin.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/drivers/serial/serial.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/cmd.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/msh.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/msh.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/msh_parse.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/msh_parse.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/shell.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/finsh/shell.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/cctype.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/cstdio.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/cstdlib.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/cstring.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/ctime.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/common/cwchar.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/components/libc/compilers/newlib/syscalls.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/common/div0.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/common/showmem.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7/context_gcc.S">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7/cpu_cache.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7/cpuport.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/libcpu/arm/cortex-m7/cpuport.h">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/clock.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/components.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/device.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/idle.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/ipc.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/irq.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/kservice.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/mem.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/mempool.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/object.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/scheduler.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/thread.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/rt-thread/src/timer.c">
+			<Option target="rtthread.elf"/>
+		</Unit>
+		<Unit filename="D:/3_main_file/8_armfly-v7-board/2_rt-thread/work/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
