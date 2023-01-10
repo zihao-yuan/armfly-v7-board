@@ -18,13 +18,13 @@ int main(void)
 {
     for(;;)
     {
-        rt_thread_mdelay(100);
+        rt_thread_mdelay(1000);
 		bsp_LedToggle(1);
-		rt_thread_mdelay(100);
+		rt_thread_mdelay(1000);
 		bsp_LedToggle(2);	
-        rt_thread_mdelay(100);
+        rt_thread_mdelay(1000);
 		bsp_LedToggle(3);
-		rt_thread_mdelay(100);
+		rt_thread_mdelay(1000);
 		bsp_LedToggle(4);	
     }
 }
