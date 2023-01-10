@@ -13,18 +13,17 @@
 #include <board.h>
 #include <bsp.h>
 
-
 int main(void)
 {
-    for(;;)
+    for (;;)
     {
         rt_thread_mdelay(1000);
-		bsp_LedToggle(1);
-		rt_thread_mdelay(1000);
-		bsp_LedToggle(2);	
+        bsp_LedToggle(1);
         rt_thread_mdelay(1000);
-		bsp_LedToggle(3);
-		rt_thread_mdelay(1000);
-		bsp_LedToggle(4);	
+        bsp_LedToggle(2);
+        rt_thread_mdelay(1000);
+        bsp_LedToggle(3);
+        rt_thread_mdelay(1000);
+        bsp_LedToggle(4);
     }
 }
